@@ -5,46 +5,49 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <meta name="description"
+    content="En este sitio encontrarás un viaje en el que se recorrerán todos los paises nordicos, sus historias, excursiones, y mucho más">
+  <meta name="keywords" content="Paises Nordicos, Proposito, Combos">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Nordic Tour</title>
+  <title>Inicio -Nordic Tour</title>
 </head>
 
 <body class="bg-white">
+  <header>
+    <div class="container-fluid px-0 fixed-top ">
+      <nav class="navbar navbar-expand-lg navbar-dark nav__animacion nav__fondo">
+        <a class="navbar-brand nav__logo" href="index.html">NT</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav__fondo" href="index.html" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Inicio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="#proposito">Proposito</a>
+                <a class="dropdown-item" href="#combo">Paquetes</a>
 
-  <div class="container-fluid px-0 fixed-top ">
-    <nav class="navbar navbar-expand-lg navbar-dark nav__animacion nav__fondo">
-      <a class="navbar-brand nav__logo" href="index.html">NT</a>
-      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav__fondo" href="index.html" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Inicio
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="index.html">Home</a>
-              <a class="dropdown-item" href="#proposito">Proposito</a>
-              <a class="dropdown-item" href="#combo">Combos</a>
-
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="paises.html">Paises</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paises.html">Paises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
   <div id="bannerSitio" class="d-flex align-items-center mt-0">
     <div class="container">
       <div class="row">
@@ -54,9 +57,12 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid px-0 span__altura span__altura--paises">
+    <span class="alturaSpan text-white"></span>
+</div>
   <div class="container bg-light mt-2">
     <div id="nosotros">
-      <h1 id="proposito" class="text-center font-bold">Propósito</h1>
+      <h2 id="proposito" class="text-center font-bold">Propósito</h2>
       <div class="container text-center img__altura">
         <img src="media/equipo.png" alt="Equipo">
       </div>
@@ -165,17 +171,9 @@
         </div>
       </div>
     </div>
-    
+
   </div>
-  <footer>
-    <div class="container">
-      <div class="row">
-      <div class="red-twitter"><a href=""></a></div>
-      <div class="red-instagram"></div>
-      <div class="red-facebook"></div>
-    </div>
-  </div>
-    </footer>
+  
   <script src="js/jquery-3.5.1.slim.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
