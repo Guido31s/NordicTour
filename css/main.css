@@ -3,6 +3,16 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+nav li {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+nav li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 nav.nav__fondo {
   background: linear-gradient(320deg, #080808 44%, #19a78a 65%, #3d9633 92%);
   -webkit-animation-duration: 1s;
@@ -20,10 +30,25 @@ nav.nav__animacion a {
   transition: 1s;
 }
 
+.fondoPaises {
+  background: linear-gradient(340deg, #b56c22 0%, white 38%, #2498a8 100%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: headerNT;
+          animation-name: headerNT;
+}
+
 .nav__logo {
   font-family: 'Big Shoulders Stencil Display', cursive;
   font-size: 36px;
   padding: 0;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.nav__logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @-webkit-keyframes headerNT {
@@ -62,6 +87,16 @@ nav.nav__animacion a {
   }
 }
 
+.dropdownColor {
+  background: linear-gradient(139deg, #3d9633 4%, #19a78a 84%);
+  border: none;
+}
+
+.dropdownColor--paises {
+  background: linear-gradient(160deg, #2498a8 28%, white 88%);
+  border: none;
+}
+
 #bannerSitio {
   background-image: url(../media/aurora.jpg);
   background-position: 50%;
@@ -76,6 +111,16 @@ nav.nav__animacion a {
   font-size: 3rem;
   line-height: 1.25em;
   font-family: 'Julius Sans One', sans-serif;
+}
+
+#nosotros img {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+#nosotros img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .img__altura img {
@@ -97,8 +142,21 @@ nav.nav__animacion a {
   height: 10vh;
 }
 
+.spanPaises {
+  background: linear-gradient(351deg, #e38423 0%, #917a55 28%, #120b04 85%);
+  height: 2vh;
+}
+
 .card button {
   color: #333;
+}
+
+.btn-link {
+  color: trasparent;
+}
+
+.btn-link:hover {
+  text-decoration: none;
 }
 
 .accordion__font {
@@ -106,7 +164,7 @@ nav.nav__animacion a {
 }
 
 .accordion__font--color {
-  color: #3d9633;
+  color: #166116;
 }
 
 .font-small {
@@ -146,5 +204,9 @@ nav.nav__animacion a {
 .card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.formColor {
+  background: linear-gradient(135deg, #3d9632 3%, #19a78a 22%, #080808 36%);
 }
 /*# sourceMappingURL=main.css.map */

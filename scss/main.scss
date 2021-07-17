@@ -4,7 +4,14 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
 nav {
+    & li {
+        transition: 250ms;
+    }
+    & li:hover {
+        transform: scale(1.1);
+    }
     &.nav__fondo {
  
     background: $fondoGradiente;
@@ -17,11 +24,23 @@ nav {
     transition: 1s;
     }
 }
+
+
+.fondoPaises {
+    background: linear-gradient(340deg, rgba(181,108,34,1) 0%, rgba(255,255,255,1) 38%, rgba(36,152,168,1) 100%);
+    animation-duration: 1s;
+    animation-name: headerNT;
+}
 .nav__logo {
     font-family: 'Big Shoulders Stencil Display', cursive;
     font-size: 36px;
     padding: 0;
+    transition: 250ms;
 }
+.nav__logo:hover {
+    transform: scale(1.1);
+}
+
 @keyframes headerNT {
     0% { opacity: 0;}
     100% { opacity: 1;}
@@ -30,6 +49,14 @@ nav {
 @keyframes letrasNT {
     0% { opacity: 0;}
     100% { opacity: 1;}
+}
+.dropdownColor {
+ background:  linear-gradient(139deg, rgba(61,150,51,1) 4%, rgba(25,167,138,1) 84%);
+ border: none;
+}
+.dropdownColor--paises {
+    background: linear-gradient(160deg, rgba(36,152,168,1) 28%, rgba(255,255,255,1) 88%);
+    border: none;
 }
 
 #bannerSitio {
@@ -47,6 +74,16 @@ nav {
     
     }
 }
+
+#nosotros {
+    & img {
+        transition: 250ms;
+    }
+    & img:hover {
+        transform: scale(1.05);
+    }
+}
+
 
 .img__altura img {
     height: 25vh;
@@ -67,11 +104,22 @@ nav {
     background: $fondoGradiente;
     height: 10vh;
 }
+.spanPaises {
+
+    background:  linear-gradient(351deg, rgba(227,132,35,1) 0%, rgba(145,122,85,1) 28%, rgba(18,11,4,1) 85%);
+    height: 2vh;
+}
 
 
 .card button {
     color: $color;
     
+}
+.btn-link {
+    color: trasparent;
+}
+.btn-link:hover {
+    text-decoration: none;
 }
 
 .accordion__font {
@@ -79,7 +127,7 @@ nav {
 }
 
 .accordion__font--color {
-    color: rgba(61,150,51,1);
+    color: rgb(22, 97, 22);
 }
 
 @each $k, $v in $fontW{
@@ -105,4 +153,9 @@ font-size: 1.25rem;
 
 .card:hover {
     transform: scale(1.02);
+}
+
+.formColor {
+    
+    background: linear-gradient(135deg, rgba(61,150,50,1) 3%, rgba(25,167,138,1) 22%, rgba(8,8,8,1) 36%);
 }
