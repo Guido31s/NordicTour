@@ -1,0 +1,108 @@
+@import "fonts";
+@import "variables";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+nav {
+    &.nav__fondo {
+ 
+    background: $fondoGradiente;
+    animation-duration: 1s;
+    animation-name: headerNT;
+}
+    &.nav__animacion a{
+    animation-duration: 3s;
+    animation-name: letrasNT;
+    transition: 1s;
+    }
+}
+.nav__logo {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 36px;
+    padding: 0;
+}
+@keyframes headerNT {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@keyframes letrasNT {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+#bannerSitio {
+    background-image: url(../media/aurora.jpg);
+    background-position: 50%;
+    background-color: #080808;
+    height: 80vh;
+    position: relative;
+     margin-top: 3%;
+     h3 {
+        color: white;
+        font-size: 3rem;
+        line-height: 1.25em;
+        font-family: 'Julius Sans One', sans-serif;
+    
+    }
+}
+
+.img__altura img {
+    height: 25vh;
+}
+
+#seccionPaises {
+    background-image: url(../media/secpaises.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-color: #080808;
+    height: 65vh;
+    position: relative;
+     margin-top: 3%;
+}
+
+.span__altura {
+
+    background: $fondoGradiente;
+    height: 10vh;
+}
+
+
+.card button {
+    color: $color;
+    
+}
+
+.accordion__font {
+    font-weight: 100;
+}
+
+.accordion__font--color {
+    color: rgba(61,150,51,1);
+}
+
+@each $k, $v in $fontW{
+    .font-#{$k}{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: $v;
+    }
+}
+
+.letraAltura {
+font-size: 1.25rem;
+}
+
+.span__altura--paises {
+
+    background: $fondoGradiente;
+    height: 2vh;
+}
+
+.card{
+    transition: 250ms;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}

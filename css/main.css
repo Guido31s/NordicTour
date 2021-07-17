@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Julius+Sans+One&family=Lato&family=Noto+Sans+JP:wght@100;300;400;500&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav.nav__fondo {
+  background: linear-gradient(320deg, #080808 44%, #19a78a 65%, #3d9633 92%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: headerNT;
+          animation-name: headerNT;
+}
+
+nav.nav__animacion a {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: letrasNT;
+          animation-name: letrasNT;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav__logo {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-size: 36px;
+  padding: 0;
+}
+
+@-webkit-keyframes headerNT {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes headerNT {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes letrasNT {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes letrasNT {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#bannerSitio {
+  background-image: url(../media/aurora.jpg);
+  background-position: 50%;
+  background-color: #080808;
+  height: 80vh;
+  position: relative;
+  margin-top: 3%;
+}
+
+#bannerSitio h3 {
+  color: white;
+  font-size: 3rem;
+  line-height: 1.25em;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.img__altura img {
+  height: 25vh;
+}
+
+#seccionPaises {
+  background-image: url(../media/secpaises.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-color: #080808;
+  height: 65vh;
+  position: relative;
+  margin-top: 3%;
+}
+
+.span__altura {
+  background: linear-gradient(320deg, #080808 44%, #19a78a 65%, #3d9633 92%);
+  height: 10vh;
+}
+
+.card button {
+  color: #333;
+}
+
+.accordion__font {
+  font-weight: 100;
+}
+
+.accordion__font--color {
+  color: #3d9633;
+}
+
+.font-small {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+}
+
+.font-regular {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+}
+
+.font-medium {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.font-bold {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+.letraAltura {
+  font-size: 1.25rem;
+}
+
+.span__altura--paises {
+  background: linear-gradient(320deg, #080808 44%, #19a78a 65%, #3d9633 92%);
+  height: 2vh;
+}
+
+.card {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+/*# sourceMappingURL=main.css.map */
