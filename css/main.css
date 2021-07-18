@@ -123,7 +123,7 @@ nav.nav__animacion a {
           transform: scale(1.05);
 }
 
-.img__altura img {
+#nosotros .img__altura img {
   height: 25vh;
 }
 
@@ -139,12 +139,19 @@ nav.nav__animacion a {
 
 .span__altura {
   background: linear-gradient(320deg, #080808 44%, #19a78a 65%, #3d9633 92%);
-  height: 10vh;
+  height: 7vh;
 }
 
 .spanPaises {
   background: linear-gradient(351deg, #e38423 0%, #917a55 28%, #120b04 85%);
   height: 2vh;
+}
+
+.imgPaises {
+  height: 30px;
+  width: 50px;
+  margin: 0 5px;
+  background-size: cover;
 }
 
 .card button {
@@ -155,7 +162,11 @@ nav.nav__animacion a {
   color: trasparent;
 }
 
-.btn-link:hover {
+.btn-link.btn-link:hover {
+  text-decoration: none;
+}
+
+.btn-link.btn-link:focus {
   text-decoration: none;
 }
 
@@ -196,17 +207,30 @@ nav.nav__animacion a {
   height: 2vh;
 }
 
-.card {
+.cardAnimation {
   -webkit-transition: 250ms;
   transition: 250ms;
 }
 
-.card:hover {
+.cardAnimation.cardAnimation:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
 .formColor {
   background: linear-gradient(135deg, #3d9632 3%, #19a78a 22%, #080808 36%);
+}
+
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  height: 15vh;
+  bottom: 0;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -82,12 +82,12 @@ nav {
     & img:hover {
         transform: scale(1.05);
     }
+    & .img__altura img {
+        height: 25vh;
+    }
 }
 
 
-.img__altura img {
-    height: 25vh;
-}
 
 #seccionPaises {
     background-image: url(../media/secpaises.jpg);
@@ -102,7 +102,7 @@ nav {
 .span__altura {
 
     background: $fondoGradiente;
-    height: 10vh;
+    height: 7vh;
 }
 .spanPaises {
 
@@ -110,6 +110,12 @@ nav {
     height: 2vh;
 }
 
+.imgPaises {
+    height: 30px;
+    width: 50px;
+    margin: 0 5px;
+    background-size: cover;
+}
 
 .card button {
     color: $color;
@@ -117,9 +123,13 @@ nav {
 }
 .btn-link {
     color: trasparent;
-}
-.btn-link:hover {
-    text-decoration: none;
+    &.btn-link:hover {
+        text-decoration: none;
+    }
+    
+    &.btn-link:focus {
+        text-decoration: none;
+    }
 }
 
 .accordion__font {
@@ -147,15 +157,27 @@ font-size: 1.25rem;
     height: 2vh;
 }
 
-.card{
-    transition: 250ms;
-}
+.cardAnimation{
 
-.card:hover {
+    transition: 250ms;
+    &.cardAnimation:hover {
     transform: scale(1.02);
+    }
 }
 
 .formColor {
     
     background: linear-gradient(135deg, rgba(61,150,50,1) 3%, rgba(25,167,138,1) 22%, rgba(8,8,8,1) 36%);
+}
+
+footer {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    height: 15vh;
+    bottom: 0;
+    img {
+        width: 25px;
+        height: 25px;
+        margin: 0 10px;
+    }
 }
