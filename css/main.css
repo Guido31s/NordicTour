@@ -111,6 +111,7 @@ nav.nav__animacion a {
   font-size: 3rem;
   line-height: 1.25em;
   font-family: 'Julius Sans One', sans-serif;
+  text-shadow: 1px 2px 5px black;
 }
 
 #nosotros img {
@@ -219,6 +220,10 @@ nav.nav__animacion a {
 
 .formColor {
   background: linear-gradient(135deg, #3d9632 3%, #19a78a 26%, #080808 43%);
+}
+
+.formColor h1 {
+  text-shadow: 1px 2px 5px black;
 }
 
 footer {
