@@ -159,8 +159,9 @@ nav.nav__animacion a {
   color: #333;
 }
 
-.btn-link {
-  color: trasparent;
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-link.btn-link:hover {

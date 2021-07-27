@@ -121,14 +121,18 @@ nav {
     color: $color;
     
 }
+.btn:focus {
+    box-shadow: none;
+}
 .btn-link {
-    color: trasparent;
+
     &.btn-link:hover {
         text-decoration: none;
     }
     
     &.btn-link:focus {
         text-decoration: none;
+    
     }
 }
 
