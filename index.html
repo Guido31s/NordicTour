@@ -63,7 +63,7 @@
   </div>
   <div id="nosotros" class="container bg-light mt-1 mb-1 border">
     <div>
-      <h2 id="proposito" class="text-center font-medium">Propósito</h2>
+      <h2 id="proposito" class="text-center font-medium mt-2">Propósito</h2>
       <div class="container text-center img__altura">
         <img src="media/equipo.png" alt="Equipo">
       </div>
@@ -78,12 +78,12 @@
         <div class="row">
           <div class="col-12 col-xl-6 img__altura">
             <img src="media/proteger.png" alt="Proteger">
-            <h3 class="font-medium">Seguridad</h3>
+            <h3 class="font-medium mt-2">Seguridad</h3>
             <p>En NT tu compra va a estar protegida! Usamos un sistema de pagos con un cifrado único</p>
           </div>
           <div class="col-12 col-xl-6 alig img__altura">
             <img src="media/apoyo.png" alt="Apoyo">
-            <h3 class="font-medium">Atención</h3>
+            <h3 class="font-medium mt-2">Atención</h3>
             <p>Contarás con un equipo que te dará asistencia las 24hs!</p>
           </div>
         </div>
@@ -178,10 +178,34 @@
     <div class="container d-flex justify-content-center">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Acerca de Nordic Tour</a>
+          <a class="nav-link active" data-toggle="modal" data-target="#acercaNordicTour">Acerca de Nordic Tour</a>
+                        <div class="modal fade" id="acercaNordicTour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Nordic Tour</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>¡Encontrá el mejor precio para vivir experiencias increíbles sin preocuparte por la planificación de tus vacaciones!
+                                    NordicTour reúne los mejores hoteles, restaurantes y excursiones de todos los países nórdicos, creando así una experiencia soñada a precios increíbles.
+                                    Unimos lo mejor de dos mundos: naturaleza y cultura. Innovamos para que vivas tu viaje soñado porque creemos que todos merecemos tener la mejor experiencia.
+                                    </p>
+                                    <p>Creemos que viajar nos transforma, porque nos permite encontrar la mejor versión de nosotros mismos. Por eso, ofrecemos el mejor servicio de atención personalizada para acompañarte en esta maravillosa aventura.
+                                     Podes comunicarte con nosotros, por teléfono las 24 horas y sin costo alguno.</p> 
+                                    <p>¡Dejá tu viaje en manos de Nordic Tour, una empresa compuesta por personas reales, como vos, apasionados por los viajes, expertos de las bellezas nórdicas y enamorados de su cultura!</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Soporte</a>
+          <a class="nav-link" href="https://api.whatsapp.com/send?phone=5491130262018&text=Soporte%20Nordic%20Tour!" target="_blank">Soporte</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="terminos.html">Terminos y condiciones</a>

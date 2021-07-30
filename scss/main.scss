@@ -175,16 +175,22 @@ font-size: 1.25rem;
     & h1 {
         text-shadow: 1px 2px 5px black
     }
+    & textarea {
+      resize: none;  
+    }
 }
 
 footer {
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     height: 15vh;
-    bottom: 0;
+    margin-top: auto;
     img {
         width: 25px;
         height: 25px;
         margin: 0 10px;
+    }
+    a {
+        cursor: pointer;
     }
 }
